@@ -1,4 +1,4 @@
-package sk.kosickaakademia.server;
+package sk.kosickaakademia.server.controller;
 
 import org.springframework.web.bind.annotation.*;
 
@@ -29,13 +29,12 @@ public class Controller {
         return "<h2>HI " + username + " What are you doing? </h2>";
     }
 
-
-
     ///POST namiesto GET chyba405
     @RequestMapping(path = "/test", method = RequestMethod.POST)
     public String getTest(@RequestBody String userName){
 
         return "Your name is " + userName;
     }
+
 
 }
