@@ -15,9 +15,14 @@ import java.util.Random;
 @RestController
 public class JokeController {
 
-    String joke1 = "joke one";
-    String joke2 = "joke two";
-    String joke3 = "joke three";
+    String joke1 = "Patient: Doctor, I have a pain in my eye whenever I drink tea.\n" +
+            "Doctor: Take the spoon out of the mug before you drink.";
+    String joke2 = "A: Hey, man! Please call me a taxi.\n" +
+            "B: Yes, sir. You are a taxi.";
+    String joke3 = "PUPIL: \"Would you punish me for something I didn`t do?\"\n" +
+            "TEACHER:\" Of course not.\"\n" +
+            "PUPIL: \"Good, because I haven`t done my homework.\"";
+
     public static List<String> list = new ArrayList<>();
 
     public void fillTheArray(){
@@ -98,5 +103,7 @@ public class JokeController {
         }
         return null;
     }
+
+
 
 }
